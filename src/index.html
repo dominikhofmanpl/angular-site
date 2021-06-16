@@ -6,8 +6,46 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    .loader {
+      border: 16px solid #f3f3f3;
+      border-top: 16px solid #F47457;
+      border-radius: 50%;
+      width: 8rem;
+      height: 8rem;
+      animation: spin 2s linear infinite;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+  <app-root><div class="loader mx-auto my-auto"></div></app-root>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("navbar").style.height = "7vh";
+        document.getElementById("navbar").style.backgroundColor = "white";
+        document.getElementById("navbar").style.filter = "drop-shadow(0px 20px 10px rgba(0,0,0, .05))"
+      } else {
+        document.getElementById("navbar").style.height = "12vh";
+        document.getElementById("navbar").style.backgroundColor = "none";
+        document.getElementById("navbar").style.filter = "none"
+      }
+    }
+  </script>
 </body>
 </html>

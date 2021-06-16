@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/logomain.svg" alt="" srcset="" style="height: 3rem;">
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex" id="navbarNav">
+      <ul class="navbar-nav ml-auto d-flex">
+        <li class="nav-item my-auto d-flex mx-md-2" *ngFor="let navs of navs$">
+          <a class="nav-link josefin-reg my-auto" routerLink="/{{navs.linkto}}">{{navs.name}}</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+</nav>

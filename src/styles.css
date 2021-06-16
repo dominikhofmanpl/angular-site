@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'JosefinSans-Regular';
+    src: url('./assets/fonts/JosefinSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'JosefinSans-Semibold';
+    src: url('./assets/fonts/JosefinSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'JosefinSans-Light';
+    src: url('./assets/fonts/JosefinSans-Light.ttf');
+}
+
+.josefin-reg {
+    font-family: 'JosefinSans-Regular';
+}
+
+.josefin-semi {
+    font-family: 'JosefinSans-Semibold';
+}
+
+.josefin-light {
+    font-family: 'JosefinSans-Light';
+}
+
+.main_orange {
+    background-color: #CE5E3B;
+}
+
+.main_deep_blue {
+    background-color: #342C3C;
+}
+
+.text_orange {
+    color: #CE5E3B;
+}

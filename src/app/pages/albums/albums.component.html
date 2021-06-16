@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 d-flex flex-column">
+            <img src="../../../assets/brake.svg" alt="" srcset="" style="width: 3rem;">
+            <h3 class="josefin-semi mt-5 mb-3">Do poczytania w felietonach</h3>
+        </div>
+    </div>
+    <div class="row py-3">
+        <div class="col-12 col-md-6 col-lg-4 mb-5" *ngFor="let felieton of felietons$ | async">
+            <app-album-item [felieton]="felieton"></app-album-item>
+        </div>
+    </div>
+</div>
+

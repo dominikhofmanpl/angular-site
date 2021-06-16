@@ -1,0 +1,33 @@
+<div class="container-fluid content p-0 mt-3 mb-5" *ngIf="felieton">
+    <div class="row">
+        <div class="col-12">
+            <div class="container main_slider" style="background-image: url({{felieton.__zone_symbol__value.acf.felieton_cover}}); background-size: cover;">
+                <div class="row">
+                  <div class="col-12 main_gradient_header d-flex p-5">
+                  </div>
+                </div>
+            </div>
+            <!-- Content section -->
+            <section class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h1 class="josefin-semi text_orange">{{felieton.__zone_symbol__value.acf.title}}</h1>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex">
+                            <p class="josefin-reg mt-auto ml-auto p-0">
+                                autor: dhofman / dodano: {{felieton.__zone_symbol__value.date}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <p class="mt-4 josefin-reg">{{ felieton.__zone_symbol__value.acf.intro }}</p>
+                            <div class="my-5 josefin-light">{{felieton.__zone_symbol__value.acf.Content}}</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> 
+    </div>
+</div>

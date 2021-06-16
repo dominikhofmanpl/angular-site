@@ -1,0 +1,36 @@
+<div class="container-fluid content p-0 mt-3 mb-5" *ngIf="review">
+    <div class="row">
+        <div class="col-12">
+            <div class="container main_slider" style="background-image: url({{review.__zone_symbol__value.acf.cover}}); background-size: cover;">
+                <div class="row">
+                  <div class="col-12 main_gradient_header d-flex p-5">
+                  </div>
+                </div>
+            </div>
+            <!-- Content section -->
+            <section class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex flex-column">
+                                <h1 class="josefin-semi text_orange">{{review.__zone_symbol__value.acf.title}}</h1>
+                                <p class="josefin-reg mt-auto p-0">
+                                    autor: dhofman / dodano: {{review.__zone_symbol__value.date}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="mt-4 josefin-reg">{{ review.__zone_symbol__value.acf.intro }}</p>
+                            <div class="my-5 josefin-light">{{review.__zone_symbol__value.acf.content}}</div>
+                            <p class="josefin-reg mt-2 p-0">
+                                podsumowując:  {{review.__zone_symbol__value.acf.grade}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> 
+    </div>
+</div>

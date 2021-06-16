@@ -1,0 +1,10 @@
+.plants {
+    position: absolute;
+    top: 80%;
+    z-index: 0;
+}
+
+.singing-people {
+    width: 40vh;
+    height: 100%;
+}

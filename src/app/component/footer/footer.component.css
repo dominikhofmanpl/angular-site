@@ -1,0 +1,13 @@
+.bg-footer {
+    background-color: #355389;
+}
+
+.navbar-brand {
+    font-family: RobotoSlab-Bold;
+    color: #F47457;
+    font-size: 2rem;
+}
+
+.navbar-brand:hover {
+    cursor: pointer;
+}

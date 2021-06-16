@@ -1,0 +1,11 @@
+<div class="p-4">
+  <div *ngFor="let newsHeader of newsHeader$ | async" class="container main_slider mt-3 mb-5" style="background-image: url({{newsHeader.acf.cover}}); background-size: cover;">
+    <div class="row">
+      <div class="col-12 main_gradient_header d-flex p-5">
+        <a routerLink="/news/{{newsHeader.id}}" class="mt-auto" style="text-decoration: none;">
+          <h2 class="josefin-reg mt-auto text-white ml-4">{{newsHeader.acf.title}}</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
